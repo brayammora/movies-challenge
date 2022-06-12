@@ -67,6 +67,9 @@ class HomeViewController: UIViewController {
     private func configureSearchBar() {
         navigationItem.searchController = searchController
         definesPresentationContext = true
+        searchController.searchBar.scopeButtonTitles = MovieCategory.allCases.map { $0.name }
+        searchController.searchBar.delegate = self
+
     }
     
     // MARK: - Actions -
@@ -79,9 +82,11 @@ class HomeViewController: UIViewController {
 extension HomeViewController: HomeViewInterface {
     
     var isFiltering: Bool {
-        let isSearchBarEmpty = searchController.searchBar.text?.isEmpty ?? true
-        return searchController.isActive && !isSearchBarEmpty
+      let searchBarScopeIsFiltering = searchController.searchBar.selectedScopeButtonIndex != 0
+      return searchController.isActive && (!isSearchBarEmpty || searchBarScopeIsFiltering)
     }
+    
+    var isSearchBarEmpty: Bool { searchController.searchBar.text?.isEmpty ?? true }
     
     func didGetError(_ message: String) {
         collectionView.setEmptyMessage(message)
@@ -101,15 +106,20 @@ extension HomeViewController: HomeViewInterface {
 // MARK: - UISearchBarDelegate -
 extension HomeViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
-        
+        if let searchText = searchController.searchBar.text {
+            let category = MovieCategory(rawValue: selectedScope) ?? .all
+            presenter.filterContentForSearchText(searchText, category)
+        }
     }
 }
 
 // MARK: - UISearchResultsUpdating -
 extension HomeViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        if let searchText = searchController.searchBar.text {
-            presenter.filterContentForSearchText(searchText)
+        let searchBar = searchController.searchBar
+        if let searchText = searchBar.text {
+            let category = MovieCategory(rawValue: searchBar.selectedScopeButtonIndex) ?? .all
+            presenter.filterContentForSearchText(searchText, category)
         }
     }
 }

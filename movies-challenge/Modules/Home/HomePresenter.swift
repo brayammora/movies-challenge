@@ -45,9 +45,15 @@ extension HomePresenter: HomePresenterInterface {
     var searchHint: String { HomeStrings.searchHint }
     var title: String { HomeStrings.title }
     
-    func filterContentForSearchText(_ searchText: String) {
+    func filterContentForSearchText(_ searchText: String, _ category: MovieCategory) {
+        
         moviesFiltered = movies.filter { (movie: Movie) -> Bool in
-            return movie.name.lowercased().contains(searchText.lowercased())
+            let doesCategoryMatch = category == .all || movie.category == category
+            if view.isSearchBarEmpty {
+                return doesCategoryMatch
+            } else {
+                return doesCategoryMatch && movie.name.lowercased().contains(searchText.lowercased())
+            }
         }
     }
     

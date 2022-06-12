@@ -7,10 +7,20 @@
 
 import Foundation
 
-enum MovieCategory: Codable {
+enum MovieCategory: Int, Codable, CaseIterable {
+    case all
     case popular
     case topRated
     case upcoming
+    
+    var name: String {
+        switch self {
+        case .all: return "All"
+        case .popular: return "Popular"
+        case .topRated: return "Top rated"
+        case .upcoming: return "Upcoming"
+        }
+    }
 }
 
 struct Movie: Codable {

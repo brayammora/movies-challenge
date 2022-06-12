@@ -18,6 +18,7 @@ protocol HomeInteractorInterface {
 
 protocol HomeViewInterface {
     var isFiltering: Bool { get }
+    var isSearchBarEmpty: Bool { get }
         
     func didGetError(_ message: String)
     func reloadData()
@@ -28,7 +29,7 @@ protocol HomePresenterInterface {
     var searchHint: String { get }
     var title: String { get }
     
-    func filterContentForSearchText(_ searchText: String)
+    func filterContentForSearchText(_ searchText: String, _ category: MovieCategory)
     func getItem(at indexPath: IndexPath) -> MovieViewModel
     func getMovies()
 }
