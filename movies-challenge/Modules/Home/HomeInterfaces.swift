@@ -13,7 +13,7 @@ enum HomeStrings {
 }
 
 protocol HomeInteractorInterface {
-    func getData(completion: @escaping (Result<PopularMovies, CustomError>) -> Void)
+    func getData(completion: @escaping (Result<[Movie], CustomError>) -> Void)
 }
 
 protocol HomeViewInterface {

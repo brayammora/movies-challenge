@@ -98,6 +98,13 @@ extension HomeViewController: HomeViewInterface {
     }
 }
 
+// MARK: - UISearchBarDelegate -
+extension HomeViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        
+    }
+}
+
 // MARK: - UISearchResultsUpdating -
 extension HomeViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {

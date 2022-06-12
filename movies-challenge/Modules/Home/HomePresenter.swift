@@ -62,8 +62,8 @@ extension HomePresenter: HomePresenterInterface {
         interactor.getData { [weak self] response in
             guard let self = self else { return }
             switch response {
-            case .success(let popularMovies):
-                self.movies = popularMovies.movies
+            case .success(let movies):
+                self.movies = movies
             case .failure(let error):
                 let message: String = error == .noInternetConnection ? ErrorStrings.noInternetMessage : ErrorStrings.defaultMessage
                 self.view.didGetError(message)
