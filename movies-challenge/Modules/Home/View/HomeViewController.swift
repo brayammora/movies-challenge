@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
     private lazy var refreshControl: UIRefreshControl = {
        let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
-        refreshControl.tintColor = .white
+        refreshControl.tintColor = .red
         return refreshControl
     }()
     
@@ -74,7 +74,14 @@ class HomeViewController: UIViewController {
     
     // MARK: - Actions -
     @objc private func onRefresh() {
+        print("collectionView.isDragging onRefresh \(collectionView.isDragging)")
         presenter.getMovies()
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        if refreshControl.isRefreshing {
+            refreshControl.endRefreshing()
+        }
     }
 }
 
@@ -96,9 +103,6 @@ extension HomeViewController: HomeViewInterface {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
             self.collectionView.reloadData()
-            if self.refreshControl.isRefreshing {
-                self.refreshControl.endRefreshing()
-            }
         }
     }
 }
