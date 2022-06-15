@@ -17,3 +17,14 @@ class HomeRouter: BaseRouter {
         viewController.presenter = presenter
     }
 }
+
+extension HomeRouter: HomeRouterInterface {
+    
+    func navigate(to option: HomeNavigationOption) {
+        switch option {
+        case .detailMovie(let id):
+            let detailMovieRouter = DetailMovieRouter(id)
+            navigationController?.pushViewController(detailMovieRouter.viewController, animated: true)
+        }
+    }
+}

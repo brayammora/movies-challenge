@@ -10,7 +10,7 @@ import Foundation
 class HomePresenter {
     
     // MARK: - Private properties -
-    private let router: HomeRouter
+    private let router: HomeRouterInterface
     private let interactor: HomeInteractorInterface
     private let view: HomeViewInterface
     
@@ -31,7 +31,7 @@ class HomePresenter {
     }
     
     // MARK: - Lifecycle -
-    init(router: HomeRouter, interactor: HomeInteractorInterface, view: HomeViewInterface) {
+    init(router: HomeRouterInterface, interactor: HomeInteractorInterface, view: HomeViewInterface) {
         self.router = router
         self.interactor = interactor
         self.view = view
@@ -45,8 +45,14 @@ extension HomePresenter: HomePresenterInterface {
     var searchHint: String { HomeStrings.searchHint }
     var title: String { HomeStrings.title }
     
+    func didSelectItem(at indexPath: IndexPath) {
+        let moviesTarget = isFiltering ? moviesFiltered : movies
+        let movie = moviesTarget[indexPath.row]
+        router.navigate(to: .detailMovie(id: movie.id))
+    }
+    
     func filterContentForSearchText(_ searchText: String, _ category: MovieCategory) {
-        
+        moviesFiltered = []
         moviesFiltered = movies.filter { (movie: Movie) -> Bool in
             let doesCategoryMatch = category == .all || movie.category == category
             if view.isSearchBarEmpty {
@@ -65,6 +71,7 @@ extension HomePresenter: HomePresenterInterface {
     }
     
     func getMovies() {
+        view.presentLoader()
         interactor.getData { [weak self] response in
             guard let self = self else { return }
             switch response {
@@ -74,6 +81,7 @@ extension HomePresenter: HomePresenterInterface {
                 let message: String = error == .noInternetConnection ? ErrorStrings.noInternetMessage : ErrorStrings.defaultMessage
                 self.view.didGetError(message)
             }
+            self.view.hideLoader()
         }
     }
 }

@@ -74,7 +74,6 @@ class HomeViewController: UIViewController {
     
     // MARK: - Actions -
     @objc private func onRefresh() {
-        print("collectionView.isDragging onRefresh \(collectionView.isDragging)")
         presenter.getMovies()
     }
     
@@ -99,11 +98,17 @@ extension HomeViewController: HomeViewInterface {
         collectionView.setEmptyMessage(message)
     }
     
+    func hideLoader() {
+        hideLoading()
+    }
+    
+    func presentLoader() {
+        showLoading()
+    }
+    
     func reloadData() {
-        DispatchQueue.main.async { [weak self] in
-            guard let self = self else { return }
-            self.collectionView.reloadData()
-        }
+        collectionView.reloadData()
+        collectionView.setContentOffset(.zero, animated: false)
     }
 }
 
@@ -148,6 +153,6 @@ extension HomeViewController: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegate -
 extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        presenter.didSelectItem(at: indexPath)
     }
 }
