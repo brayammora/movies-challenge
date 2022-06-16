@@ -19,7 +19,7 @@ class DetailMovieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
-        presenter.viewDidLoad()
+        presenter.getDetailMovie()
     }
     
     // MARK: - Private methods -

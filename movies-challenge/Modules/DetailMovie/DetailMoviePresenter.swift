@@ -30,24 +30,6 @@ class DetailMoviePresenter {
         self.idMovie = idMovie
     }
     
-    private func getDetailMovie() {
-        view.presentLoader()
-        interactor.getDetailMovie(idMovie) { [weak self] response in
-            guard let self = self else { return }
-            switch response {
-            case .success(let detailMovie):
-                self.detailMovie = detailMovie
-                self.getSections()
-                self.view.reloadData()
-            case .failure(let error):
-                let message: String = error == .noInternetConnection ? ErrorStrings.noInternetMessage : ErrorStrings.defaultMessage
-                self.view.didGetError(message)
-            }
-            self.view.hideLoader()
-            
-        }
-    }
-    
     private func getSections() {
         sections.append(.image)
         
@@ -69,11 +51,31 @@ class DetailMoviePresenter {
 // MARK: - DetailMoviePresenterInterface -
 extension DetailMoviePresenter: DetailMoviePresenterInterface {
     
-    var numberOfItemsInSection: Int { 1 }
-    var numberOfSections: Int { sections.count }
+    var numberOfItemsInSection: Int { detailMovie != nil ? 1 : 0 }
+    var numberOfSections: Int { detailMovie != nil ? sections.count : 0 }
+    
+    func getDetailMovie() {
+        view.presentLoader()
+        interactor.getDetailMovie(idMovie) { [weak self] response in
+            guard let self = self else { return }
+            switch response {
+            case .success(let detailMovie):
+                self.detailMovie = detailMovie
+                self.getSections()
+                self.view.reloadData()
+            case .failure(let error):
+                let message: String = error == .noInternetConnection ? ErrorStrings.noInternetMessage : ErrorStrings.defaultMessage
+                self.view.didGetError(message)
+            }
+            self.view.hideLoader()
+            
+        }
+    }
     
     func getItem(at indexPath: IndexPath) -> DetailMovieTableSection? {
-        guard let detailMovie = detailMovie else { return nil }
+        guard let detailMovie = detailMovie,
+              indexPath.section < sections.count
+        else { return nil }
         
         let section = sections[indexPath.section]
         
@@ -88,9 +90,5 @@ extension DetailMoviePresenter: DetailMoviePresenterInterface {
         case .status:
             return .info(DetailInfoViewModel(title: section.titleHeader, information: detailMovie.status))
         }
-    }
-    
-    func viewDidLoad() {
-        getDetailMovie()
     }
 }

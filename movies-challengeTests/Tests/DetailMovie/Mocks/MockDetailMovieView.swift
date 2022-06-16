@@ -1,0 +1,36 @@
+//
+//  MockDetailMovieView.swift
+//  movies-challengeTests
+//
+//  Created by Brayam Mora on 16/06/22.
+//
+
+import Foundation
+@testable import movies_challenge
+
+struct DetailMovieViewCalls {
+    var didGetError: Bool = false
+    var didHideLoader: Bool = false
+    var didPresentLoader: Bool = false
+    var didReloadData: Bool = false
+}
+
+class MockDetailMovieView: DetailMovieViewInterface {
+    lazy var calls = DetailMovieViewCalls()
+    
+    func didGetError(_ message: String) {
+        calls.didGetError = true
+    }
+    
+    func hideLoader() {
+        calls.didHideLoader = true
+    }
+    
+    func presentLoader() {
+        calls.didPresentLoader = true
+    }
+    
+    func reloadData() {
+        calls.didReloadData = true
+    }
+}

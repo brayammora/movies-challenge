@@ -24,8 +24,8 @@ protocol DetailMoviePresenterInterface {
     var numberOfItemsInSection: Int { get }
     var numberOfSections: Int { get }
     
+    func getDetailMovie()
     func getItem(at indexPath: IndexPath) -> DetailMovieTableSection?
-    func viewDidLoad()
 }
 
 enum DetailMovieTableSection {
