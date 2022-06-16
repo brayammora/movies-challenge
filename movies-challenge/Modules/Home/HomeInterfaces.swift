@@ -35,12 +35,12 @@ protocol HomeViewInterface {
 }
 
 protocol HomePresenterInterface {
-    var numberOfItemsInSection: Int { get }
+    var numberOfItems: Int { get }
     var searchHint: String { get }
     var title: String { get }
     
     func didSelectItem(at indexPath: IndexPath)
     func filterContentForSearchText(_ searchText: String, _ category: MovieCategory)
-    func getItem(at indexPath: IndexPath) -> MovieViewModel
+    func getItem(at indexPath: IndexPath) -> MovieViewModel?
     func getMovies()
 }

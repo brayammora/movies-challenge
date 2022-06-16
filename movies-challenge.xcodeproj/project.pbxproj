@@ -40,11 +40,15 @@
 		55D756B328559B6E00259415 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D756B228559B6E00259415 /* Endpoint.swift */; };
 		55D756B528559C2A00259415 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D756B428559C2A00259415 /* NetworkConstants.swift */; };
 		55D756B72855A06600259415 /* PopularMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D756B62855A06600259415 /* PopularMovies.swift */; };
+		55E0334C285AD21E00150514 /* MockHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E03347285AD21E00150514 /* MockHomeInteractor.swift */; };
+		55E0334D285AD21E00150514 /* HomePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E03348285AD21E00150514 /* HomePresenterTest.swift */; };
+		55E0334E285AD21E00150514 /* PopularMovies.json in Resources */ = {isa = PBXBuildFile; fileRef = 55E0334B285AD21E00150514 /* PopularMovies.json */; };
+		55E03350285AD33400150514 /* MockHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E0334F285AD33400150514 /* MockHomeRouter.swift */; };
+		55E03352285AD35500150514 /* MockHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E03351285AD35500150514 /* MockHomeView.swift */; };
 		55FBE1FE285412A200E3A793 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBE1FD285412A200E3A793 /* AppDelegate.swift */; };
 		55FBE200285412A200E3A793 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBE1FF285412A200E3A793 /* SceneDelegate.swift */; };
 		55FBE207285412A400E3A793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FBE206285412A400E3A793 /* Assets.xcassets */; };
 		55FBE20A285412A400E3A793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FBE208285412A400E3A793 /* LaunchScreen.storyboard */; };
-		55FBE215285412A400E3A793 /* movies_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBE214285412A400E3A793 /* movies_challengeTests.swift */; };
 		55FBE21F285412A400E3A793 /* movies_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBE21E285412A400E3A793 /* movies_challengeUITests.swift */; };
 		55FBE221285412A400E3A793 /* movies_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBE220285412A400E3A793 /* movies_challengeUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -100,6 +104,11 @@
 		55D756B228559B6E00259415 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		55D756B428559C2A00259415 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		55D756B62855A06600259415 /* PopularMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovies.swift; sourceTree = "<group>"; };
+		55E03347285AD21E00150514 /* MockHomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHomeInteractor.swift; sourceTree = "<group>"; };
+		55E03348285AD21E00150514 /* HomePresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenterTest.swift; sourceTree = "<group>"; };
+		55E0334B285AD21E00150514 /* PopularMovies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PopularMovies.json; sourceTree = "<group>"; };
+		55E0334F285AD33400150514 /* MockHomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeRouter.swift; sourceTree = "<group>"; };
+		55E03351285AD35500150514 /* MockHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeView.swift; sourceTree = "<group>"; };
 		55FBE1FA285412A200E3A793 /* movies-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "movies-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FBE1FD285412A200E3A793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55FBE1FF285412A200E3A793 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +116,6 @@
 		55FBE209285412A400E3A793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55FBE20B285412A400E3A793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55FBE210285412A400E3A793 /* movies-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "movies-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		55FBE214285412A400E3A793 /* movies_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movies_challengeTests.swift; sourceTree = "<group>"; };
 		55FBE21A285412A400E3A793 /* movies-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "movies-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FBE21E285412A400E3A793 /* movies_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movies_challengeUITests.swift; sourceTree = "<group>"; };
 		55FBE220285412A400E3A793 /* movies_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movies_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -211,6 +219,49 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		55E03344285AD21E00150514 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				55E03345285AD21E00150514 /* Home */,
+				55E03349285AD21E00150514 /* DetailMovie */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		55E03345285AD21E00150514 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				55E03346285AD21E00150514 /* Mocks */,
+				55E03348285AD21E00150514 /* HomePresenterTest.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		55E03346285AD21E00150514 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				55E03347285AD21E00150514 /* MockHomeInteractor.swift */,
+				55E0334F285AD33400150514 /* MockHomeRouter.swift */,
+				55E03351285AD35500150514 /* MockHomeView.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		55E03349285AD21E00150514 /* DetailMovie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailMovie;
+			sourceTree = "<group>";
+		};
+		55E0334A285AD21E00150514 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				55E0334B285AD21E00150514 /* PopularMovies.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 		55FBE1F1285412A200E3A793 = {
 			isa = PBXGroup;
 			children = (
@@ -248,7 +299,8 @@
 		55FBE213285412A400E3A793 /* movies-challengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				55FBE214285412A400E3A793 /* movies_challengeTests.swift */,
+				55E0334A285AD21E00150514 /* Stubs */,
+				55E03344285AD21E00150514 /* Tests */,
 			);
 			path = "movies-challengeTests";
 			sourceTree = "<group>";
@@ -446,6 +498,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55E0334E285AD21E00150514 /* PopularMovies.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +557,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55FBE215285412A400E3A793 /* movies_challengeTests.swift in Sources */,
+				55E0334C285AD21E00150514 /* MockHomeInteractor.swift in Sources */,
+				55E03350285AD33400150514 /* MockHomeRouter.swift in Sources */,
+				55E0334D285AD21E00150514 /* HomePresenterTest.swift in Sources */,
+				55E03352285AD35500150514 /* MockHomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

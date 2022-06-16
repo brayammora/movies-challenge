@@ -136,15 +136,16 @@ extension HomeViewController: UISearchResultsUpdating {
 // MARK: - UICollectionViewDataSource -
 extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return presenter.numberOfItemsInSection
+        return presenter.numberOfItems
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MovieViewCell.name, for: indexPath) as? MovieViewCell
+        guard let viewModel = presenter.getItem(at: indexPath),
+              let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MovieViewCell.name, for: indexPath) as? MovieViewCell
         else {
             return UICollectionViewCell()
         }
-        let viewModel = presenter.getItem(at: indexPath)
+        
         cell.configure(with: viewModel)
         return cell
     }

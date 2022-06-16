@@ -41,12 +41,13 @@ class HomePresenter {
 // MARK: - HomePresenterInterface -
 extension HomePresenter: HomePresenterInterface {
     
-    var numberOfItemsInSection: Int { isFiltering ? moviesFiltered.count : movies.count }
+    var numberOfItems: Int { isFiltering ? moviesFiltered.count : movies.count }
     var searchHint: String { HomeStrings.searchHint }
     var title: String { HomeStrings.title }
     
     func didSelectItem(at indexPath: IndexPath) {
         let moviesTarget = isFiltering ? moviesFiltered : movies
+        guard indexPath.row < moviesTarget.count else { return }
         let movie = moviesTarget[indexPath.row]
         router.navigate(to: .detailMovie(id: movie.id))
     }
@@ -63,8 +64,9 @@ extension HomePresenter: HomePresenterInterface {
         }
     }
     
-    func getItem(at indexPath: IndexPath) -> MovieViewModel {
+    func getItem(at indexPath: IndexPath) -> MovieViewModel? {
         let moviesTarget = isFiltering ? moviesFiltered : movies
+        guard indexPath.row < moviesTarget.count else { return nil }
         let movie = moviesTarget[indexPath.row]
         let completePath = "\(NetworkConstants.baseImageUrl)\(movie.posterPath ?? "")"
         return MovieViewModel(posterUrl: completePath)
