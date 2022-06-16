@@ -19,6 +19,7 @@ class DetailMovieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        presenter.viewDidLoad()
     }
     
     // MARK: - Private methods -
@@ -32,17 +33,41 @@ class DetailMovieViewController: UIViewController {
 // MARK: - DetailMovieViewInterface -
 extension DetailMovieViewController: DetailMovieViewInterface {
     
+    func didGetError(_ message: String) {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.tableView.setEmptyMessage(message)
+        }
+    }
+    
     func hideLoader() {
-        hideLoading()
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.hideLoading()
+        }
     }
     
     func presentLoader() {
-        showLoading()
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.showLoading()
+        }
+    }
+    
+    func reloadData() {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.tableView.reloadData()
+        }
     }
 }
 
 // MARK: - UITableViewDataSource -
 extension DetailMovieViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return presenter.numberOfSections
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter.numberOfItemsInSection

@@ -9,22 +9,28 @@ import Foundation
 
 protocol DetailMovieRouterInterface { }
 
-protocol DetailMovieInteractorInterface { }
+protocol DetailMovieInteractorInterface {
+    func getDetailMovie(_ idMovie: Int, completion: @escaping (Result<DetailMovie, CustomError>) -> Void)
+}
 
 protocol DetailMovieViewInterface {
+    func didGetError(_ message: String)
     func hideLoader()
     func presentLoader()
+    func reloadData()
 }
 
 protocol DetailMoviePresenterInterface {
     var numberOfItemsInSection: Int { get }
+    var numberOfSections: Int { get }
     
     func getItem(at indexPath: IndexPath) -> DetailMovieTableSection?
+    func viewDidLoad()
 }
 
 enum DetailMovieTableSection {
-    case image(detailImageViewModel: DetailImageViewModel)
-    case info(infoViewModel: DetailInfoViewModel)
+    case image(_ detailImageViewModel: DetailImageViewModel)
+    case info(_ infoViewModel: DetailInfoViewModel)
 }
 
 enum DetailMovieTableViewSections: CaseIterable {
