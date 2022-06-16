@@ -1,5 +1,5 @@
 //
-//  DetailMoviePresenterTest.swift
+//  DetailMoviePresenterTests.swift
 //  movies-challengeTests
 //
 //  Created by Brayam Mora on 16/06/22.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import movies_challenge
 
-class DetailMoviePresenterTest: XCTestCase {
+class DetailMoviePresenterTests: XCTestCase {
     
     var sut: DetailMoviePresenter?
     let interactor = MockDetailMovieInteractor()

@@ -7,11 +7,16 @@
 
 import Foundation
 
-class HomeInteractor: BaseService {
+class HomeInteractor {
     
     private let homeServicesGroup = DispatchGroup()
+    private let serviceManager: BaseService
     private var allMovies: [Movie] = []
     private var errorData: CustomError?
+    
+    init(serviceManager: BaseService) {
+        self.serviceManager = serviceManager
+    }
     
     private func getPopularMovies() {
         homeServicesGroup.enter()
@@ -20,7 +25,7 @@ class HomeInteractor: BaseService {
             URLQueryItem(name: "language", value: "en"),
             URLQueryItem(name: "page", value: "1")
         ]
-        sendRequest(endpoint: .popular, queryParams: params, of: PopularMovies.self, method: .get) { [weak self] response in
+        serviceManager.sendRequest(endpoint: .popular, queryParams: params, of: PopularMovies.self, method: .get) { [weak self] response in
             guard let self = self else { return }
             switch response {
             case .success(let popularMovies):
@@ -39,7 +44,7 @@ class HomeInteractor: BaseService {
             URLQueryItem(name: "language", value: "en"),
             URLQueryItem(name: "page", value: "1")
         ]
-        sendRequest(endpoint: .topRated, queryParams: params, of: TopRatedMovies.self, method: .get) { [weak self] response in
+        serviceManager.sendRequest(endpoint: .topRated, queryParams: params, of: TopRatedMovies.self, method: .get) { [weak self] response in
             guard let self = self else { return }
             switch response {
             case .success(let topRatedMovies):
@@ -58,7 +63,7 @@ class HomeInteractor: BaseService {
             URLQueryItem(name: "language", value: "en"),
             URLQueryItem(name: "page", value: "1")
         ]
-        sendRequest(endpoint: .upcoming, queryParams: params, of: UpcomingMovies.self, method: .get) { [weak self] response in
+        serviceManager.sendRequest(endpoint: .upcoming, queryParams: params, of: UpcomingMovies.self, method: .get) { [weak self] response in
             guard let self = self else { return }
             switch response {
             case .success(let upcomingMovies):

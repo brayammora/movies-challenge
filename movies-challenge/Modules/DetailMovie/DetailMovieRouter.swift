@@ -12,7 +12,8 @@ class DetailMovieRouter: BaseRouter {
     init(_ idMovie: Int) {
         let viewController = DetailMovieViewController()
         super.init(viewController: viewController)
-        let interactor = DetailMovieInteractor()
+        let serviceManager = ServiceManager()
+        let interactor = DetailMovieInteractor(serviceManager: serviceManager)
         let presenter = DetailMoviePresenter(router: self, interactor: interactor, view: viewController, idMovie: idMovie)
         viewController.presenter = presenter
     }

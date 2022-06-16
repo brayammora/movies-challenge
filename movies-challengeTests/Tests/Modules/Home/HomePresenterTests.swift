@@ -1,5 +1,5 @@
 //
-//  HomePresenterTest.swift
+//  HomePresenterTests.swift
 //  movies-challengeTests
 //
 //  Created by Brayam Mora on 15/06/22.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import movies_challenge
 
-class HomePresenterTest: XCTestCase {
+class HomePresenterTests: XCTestCase {
     
     var sut: HomePresenter?
     let interactor = MockHomeInteractor()

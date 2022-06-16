@@ -12,7 +12,8 @@ class HomeRouter: BaseRouter {
     init() {
         let viewController = HomeViewController()
         super.init(viewController: viewController)
-        let interactor = HomeInteractor()
+        let serviceManager = ServiceManager()
+        let interactor = HomeInteractor(serviceManager: serviceManager)
         let presenter = HomePresenter(router: self, interactor: interactor, view: viewController)
         viewController.presenter = presenter
     }

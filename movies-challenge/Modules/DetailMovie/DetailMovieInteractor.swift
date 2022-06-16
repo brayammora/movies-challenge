@@ -7,7 +7,14 @@
 
 import Foundation
 
-class DetailMovieInteractor: BaseService { }
+class DetailMovieInteractor {
+    
+    private let serviceManager: BaseService
+    
+    init(serviceManager: BaseService) {
+        self.serviceManager = serviceManager
+    }
+}
 
 // MARK: - DetailMovieInteractorInterface -
 extension DetailMovieInteractor: DetailMovieInteractorInterface {
@@ -18,7 +25,7 @@ extension DetailMovieInteractor: DetailMovieInteractorInterface {
             URLQueryItem(name: "language", value: "en"),
             URLQueryItem(name: "page", value: "1")
         ]
-        sendRequest(
+        serviceManager.sendRequest(
             endpoint: .detail(id: idMovie),
             queryParams: params,
             of: DetailMovie.self,

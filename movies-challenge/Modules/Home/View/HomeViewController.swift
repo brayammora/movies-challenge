@@ -157,3 +157,11 @@ extension HomeViewController: UICollectionViewDelegate {
         presenter.didSelectItem(at: indexPath)
     }
 }
+
+// MARK: - HomeViewController getters -
+extension HomeViewController {
+    
+    func getCollectionView() -> UICollectionView {
+        return collectionView
+    }
+}

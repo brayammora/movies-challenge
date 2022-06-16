@@ -1,0 +1,149 @@
+{
+   "id":338953,
+   "results":[
+      {
+         "iso_639_1":"en",
+         "iso_3166_1":"US",
+         "name":"Mads Mikkelsen’s Grindelwald",
+         "key":"qDd3eAuFZjM",
+         "site":"YouTube",
+         "size":1080,
+         "type":"Featurette",
+         "official":true,
+         "published_at":"2022-04-12T18:00:27.000Z",
+         "id":"6255d3c9498ef9005000fb65"
+      },
+      {
+         "iso_639_1":"en",
+         "iso_3166_1":"US",
+         "name":"Final Trailer",
+         "key":"Fo6TfHkLW6Y",
+         "site":"YouTube",
+         "size":1080,
+         "type":"Trailer",
+         "official":true,
+         "published_at":"2022-04-11T16:00:39.000Z",
+         "id":"62545d1f447f9c485e1dc05c"
+      },
+      {
+         "iso_639_1":"en",
+         "iso_3166_1":"US",
+         "name":"A Charming New Professor",
+         "key":"-aaw-Or2iCY",
+         "site":"YouTube",
+         "size":1080,
+         "type":"Featurette",
+         "official":true,
+         "published_at":"2022-04-07T17:48:40.000Z",
+         "id":"624f24e0037264005068b2fa"
+      },
+      {
+         "iso_639_1":"en",
+         "iso_3166_1":"US",
+         "name":"World Premiere Highlights",
+         "key":"U6quJDpAOIY",
+         "site":"YouTube",
+         "size":1080,
+         "type":"Featurette",
+         "official":true,
+         "published_at":"2022-03-30T18:00:39.000Z",
+         "id":"6244f5ffcee481004881c952"
+      },
+      {
+         "iso_639_1":"en",
+         "iso_3166_1":"US",
+         "name":"Unlocking Dumbledore’s Past",
+         "key":"8S7AxEQweHk",
+         "site":"YouTube",
+         "size":1080,
+         "type":"Featurette",
+         "official":true,
+         "published_at":"2022-03-29T20:44:56.000Z",
+         "id":"624397c9c740d90047ae51f5"
+      },
+      {
+         "iso_639_1":"en",
+         "iso_3166_1":"US",
+         "name":"Even More Fantastic Beasts",
+         "key":"yeOQqDI_i0w",
+         "site":"YouTube",
+         "size":1080,
+         "type":"Featurette",
+         "official":true,
+         "published_at":"2022-03-24T23:00:30.000Z",
+         "id":"624397073e09f3005b42c7f7"
+      },
+      {
+         "iso_639_1":"en",
+         "iso_3166_1":"US",
+         "name":"The Magic of Hogwarts",
+         "key":"c0iLmZ46bbw",
+         "site":"YouTube",
+         "size":1080,
+         "type":"Behind the Scenes",
+         "official":true,
+         "published_at":"2022-03-22T19:03:18.000Z",
+         "id":"624396870d29440090c379b4"
+      },
+      {
+         "iso_639_1":"en",
+         "iso_3166_1":"US",
+         "name":"Dumbledore’s First Army",
+         "key":"yeai1djamEA",
+         "site":"YouTube",
+         "size":1080,
+         "type":"Behind the Scenes",
+         "official":true,
+         "published_at":"2022-03-15T18:00:42.000Z",
+         "id":"6230e9f96517d60045ebb357"
+      },
+      {
+         "iso_639_1":"en",
+         "iso_3166_1":"US",
+         "name":"Official Trailer 2",
+         "key":"DaM_wL1ZOM4",
+         "site":"YouTube",
+         "size":2160,
+         "type":"Trailer",
+         "official":true,
+         "published_at":"2022-02-28T15:00:07.000Z",
+         "id":"621d0f459f1be70044642f24"
+      },
+      {
+         "iso_639_1":"en",
+         "iso_3166_1":"US",
+         "name":"Official Trailer",
+         "key":"Y9dr2zw-TXQ",
+         "site":"YouTube",
+         "size":1080,
+         "type":"Trailer",
+         "official":true,
+         "published_at":"2021-12-13T15:00:16.000Z",
+         "id":"61b760f321621b001d3c835e"
+      },
+      {
+         "iso_639_1":"en",
+         "iso_3166_1":"US",
+         "name":"Official Trailer Monday",
+         "key":"55FSKz9ZCB4",
+         "site":"YouTube",
+         "size":1080,
+         "type":"Teaser",
+         "official":true,
+         "published_at":"2021-12-10T15:00:03.000Z",
+         "id":"61b7d79afd7aa400985418ea"
+      },
+      {
+         "iso_639_1":"en",
+         "iso_3166_1":"US",
+         "name":"Title Treatment",
+         "key":"Rri7YmTmfoI",
+         "site":"YouTube",
+         "size":1080,
+         "type":"Teaser",
+         "official":false,
+         "published_at":"2021-09-22T16:41:44.000Z",
+         "id":"614c257acf4b8b00629c7b7a"
+      }
+   ]
+}

@@ -1,0 +1,411 @@
+{
+   "dates":{
+      "maximum":"2022-07-13",
+      "minimum":"2022-06-22"
+   },
+   "page":1,
+   "results":[
+      {
+         "adult":false,
+         "backdrop_path":"/1Ds7xy7ILo8u2WWxdnkJth1jQVT.jpg",
+         "genre_ids":[
+            28,
+            12,
+            35
+         ],
+         "id":752623,
+         "original_language":"en",
+         "original_title":"The Lost City",
+         "overview":"A reclusive romance novelist was sure nothing could be worse than getting stuck on a book tour with her cover model until a kidnapping attempt sweeps them both into a cutthroat jungle adventure, proving life can be so much stranger, and more romantic, than any of her paperback fictions.",
+         "popularity":3088.189,
+         "poster_path":"/neMZH82Stu91d3iqvLdNQfqPPyl.jpg",
+         "release_date":"2022-03-24",
+         "title":"The Lost City",
+         "video":false,
+         "vote_average":6.8,
+         "vote_count":1167
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/cqnVuxXe6vA7wfNWubak3x36DKJ.jpg",
+         "genre_ids":[
+            28,
+            12,
+            14
+         ],
+         "id":639933,
+         "original_language":"en",
+         "original_title":"The Northman",
+         "overview":"Prince Amleth is on the verge of becoming a man when his father is brutally murdered by his uncle, who kidnaps the boy's mother. Two decades later, Amleth is now a Viking who's on a mission to save his mother, kill his uncle and avenge his father.",
+         "popularity":2440.073,
+         "poster_path":"/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg",
+         "release_date":"2022-04-07",
+         "title":"The Northman",
+         "video":false,
+         "vote_average":7.3,
+         "vote_count":1500
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/hcNM0HjfPonIzOVy6LVTDBXSfMq.jpg",
+         "genre_ids":[
+            28,
+            53,
+            80
+         ],
+         "id":864116,
+         "original_language":"en",
+         "original_title":"A Day to Die",
+         "overview":"A disgraced parole officer is indebted to a local gang leader and forced to pull off a series of dangerous drug heists within twelve hours in order to pay the $2 million dollars he owes, rescue his kidnapped pregnant wife, and settle a score with the city's corrupt police chief, who is working with the gang leader and double-crossed him years ago.",
+         "popularity":2135.832,
+         "poster_path":"/8Kce1utfytAG5m1PbtVoDzmDZJH.jpg",
+         "release_date":"2022-03-04",
+         "title":"A Day to Die",
+         "video":false,
+         "vote_average":6,
+         "vote_count":61
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/odJ4hx6g6vBt4lBWKFD1tI8WS4x.jpg",
+         "genre_ids":[
+            28,
+            18
+         ],
+         "id":361743,
+         "original_language":"en",
+         "original_title":"Top Gun: Maverick",
+         "overview":"After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
+         "popularity":886.467,
+         "poster_path":"/wxP2Mzv9CdjOK6t4dNnFGqIQl0V.jpg",
+         "release_date":"2022-05-24",
+         "title":"Top Gun: Maverick",
+         "video":false,
+         "vote_average":8.3,
+         "vote_count":1018
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/cugmVwK0N4aAcLibelKN5jWDXSx.jpg",
+         "genre_ids":[
+            16,
+            28,
+            14,
+            12
+         ],
+         "id":768744,
+         "original_language":"ja",
+         "original_title":"僕のヒーローアカデミア THE MOVIE ワールド ヒーローズ ミッション",
+         "overview":"A mysterious group called Humarize strongly believes in the Quirk Singularity Doomsday theory which states that when quirks get mixed further in with future generations, that power will bring forth the end of humanity. In order to save everyone, the Pro-Heroes around the world ask UA Academy heroes-in-training to assist them and form a world-classic selected hero team. It is up to the heroes to save the world and the future of heroes in what is the most dangerous crisis to take place yet in My Hero Academia.",
+         "popularity":794.282,
+         "poster_path":"/4NUzcKtYPKkfTwKsLjwNt8nRIXV.jpg",
+         "release_date":"2021-08-06",
+         "title":"My Hero Academia: World Heroes' Mission",
+         "video":false,
+         "vote_average":7.5,
+         "vote_count":193
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/pFwvHAFyPEqtvJEoutPuobLwrNj.jpg",
+         "genre_ids":[
+            16,
+            35,
+            10751
+         ],
+         "id":778810,
+         "original_language":"en",
+         "original_title":"Fireheart",
+         "overview":"The film explores the world of firefighters in 1920s New York City and tells the story of a 16-year-old girl who will have to become a hero in order to save her city.",
+         "popularity":560.348,
+         "poster_path":"/hepwOZWJNUmLzB68gKYEdEJAaD3.jpg",
+         "release_date":"2022-01-16",
+         "title":"Fireheart",
+         "video":false,
+         "vote_average":7.5,
+         "vote_count":79
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/tqUD26YGjKmFqOJAgbNBah1gX0N.jpg",
+         "genre_ids":[
+            16,
+            878,
+            12,
+            28,
+            10751
+         ],
+         "id":718789,
+         "original_language":"en",
+         "original_title":"Lightyear",
+         "overview":"Legendary Space Ranger Buzz Lightyear embarks on an intergalactic adventure alongside a group of ambitious recruits and his robot companion Sox.",
+         "popularity":472.819,
+         "poster_path":"/tbUhPhir8TGDkD8RruiBAJE9Nd3.jpg",
+         "release_date":"2022-06-15",
+         "title":"Lightyear",
+         "video":false,
+         "vote_average":7.2,
+         "vote_count":13
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/bcpATvKQmSgCbwxONs9PPQrer3A.jpg",
+         "genre_ids":[
+            28,
+            12,
+            14
+         ],
+         "id":616037,
+         "original_language":"en",
+         "original_title":"Thor: Love and Thunder",
+         "overview":"After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now inexplicably wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late.",
+         "popularity":442.132,
+         "poster_path":"/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
+         "release_date":"2022-06-07",
+         "title":"Thor: Love and Thunder",
+         "video":false,
+         "vote_average":0,
+         "vote_count":0
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/2gGVdr0BcKzma68SW2jpZfJtOlB.jpg",
+         "genre_ids":[
+            10751,
+            16,
+            28,
+            12,
+            35
+         ],
+         "id":438148,
+         "original_language":"en",
+         "original_title":"Minions: The Rise of Gru",
+         "overview":"A fanboy of a supervillain supergroup known as the Vicious 6, Gru hatches a plan to become evil enough to join them, with the backup of his followers, the Minions.",
+         "popularity":299.481,
+         "poster_path":"/wKiOkZTN9lUUUNZLmtnwubZYONg.jpg",
+         "release_date":"2022-06-16",
+         "title":"Minions: The Rise of Gru",
+         "video":false,
+         "vote_average":7.6,
+         "vote_count":9
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/fIwiFha3WPu5nHkBeMQ4GzEk0Hv.jpg",
+         "genre_ids":[
+            28,
+            12,
+            878
+         ],
+         "id":545611,
+         "original_language":"en",
+         "original_title":"Everything Everywhere All at Once",
+         "overview":"An aging Chinese immigrant is swept up in an insane adventure, where she alone can save what's important to her by connecting with the lives she could have led in other universes.",
+         "popularity":243.982,
+         "poster_path":"/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg",
+         "release_date":"2022-03-24",
+         "title":"Everything Everywhere All at Once",
+         "video":false,
+         "vote_average":8.3,
+         "vote_count":638
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/geYUecpFI2AonDLhjyK9zoVFcMv.jpg",
+         "genre_ids":[
+            16,
+            28,
+            12,
+            9648
+         ],
+         "id":810693,
+         "original_language":"ja",
+         "original_title":"劇場版 呪術廻戦 0",
+         "overview":"Yuta Okkotsu is a nervous high school student who is suffering from a serious problem—his childhood friend Rika has turned into a curse and won't leave him alone. Since Rika is no ordinary curse, his plight is noticed by Satoru Gojo, a teacher at Jujutsu High, a school where fledgling exorcists learn how to combat curses. Gojo convinces Yuta to enroll, but can he learn enough in time to confront the curse that haunts him?",
+         "popularity":244.693,
+         "poster_path":"/3pTwMUEavTzVOh6yLN0aEwR7uSy.jpg",
+         "release_date":"2021-12-24",
+         "title":"Jujutsu Kaisen 0",
+         "video":false,
+         "vote_average":7.9,
+         "vote_count":183
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/klioTuA8JepFgV0EC7IxqV6VbrM.jpg",
+         "genre_ids":[
+            27,
+            28,
+            53
+         ],
+         "id":776797,
+         "original_language":"zh",
+         "original_title":"哭悲",
+         "overview":"A young couple is pushed to the limits of sanity as they attempt to be reunited amid the chaos of a pandemic outbreak. The streets erupt into violence and depravity, as those infected are driven to enact the most cruel and ghastly things imaginable.",
+         "popularity":272.254,
+         "poster_path":"/a7VHvhROWorsWrtNKQnLZTxpxuG.jpg",
+         "release_date":"2021-01-22",
+         "title":"The Sadness",
+         "video":false,
+         "vote_average":6.8,
+         "vote_count":167
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/h9zyS1LrufwLI9FyhiPjPWsppEK.jpg",
+         "genre_ids":[
+            27,
+            53
+         ],
+         "id":756999,
+         "original_language":"en",
+         "original_title":"The Black Phone",
+         "overview":"Finney Shaw, a shy but clever 13-year-old boy, is abducted by a sadistic killer and trapped in a soundproof basement where screaming is of little use. When a disconnected phone on the wall begins to ring, Finney discovers that he can hear the voices of the killer’s previous victims. And they are dead set on making sure that what happened to them doesn’t happen to Finney.",
+         "popularity":157.274,
+         "poster_path":"/bxHZpV02OOu9vq3sb3MsOudEnYc.jpg",
+         "release_date":"2022-05-29",
+         "title":"The Black Phone",
+         "video":false,
+         "vote_average":8.8,
+         "vote_count":5
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/nV905JQSBo0a6zW8UmmmhDj0fQj.jpg",
+         "genre_ids":[
+            80,
+            28,
+            53
+         ],
+         "id":826749,
+         "original_language":"en",
+         "original_title":"Fortress",
+         "overview":"The story revolves around a top-secret resort for retired U.S. intelligence officers. A group of criminals led by Balzary breach the compound, hellbent on revenge on Robert, forcing the retired officer and his son to save the day.",
+         "popularity":113.406,
+         "poster_path":"/vQxtoPJVfpHgL7DCg9hQFZKDWJa.jpg",
+         "release_date":"2021-12-17",
+         "title":"Fortress",
+         "video":false,
+         "vote_average":6.2,
+         "vote_count":222
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/1zgz0LAT3avelWe6whHSa9j7zfq.jpg",
+         "genre_ids":[
+            18,
+            10402,
+            36
+         ],
+         "id":614934,
+         "original_language":"en",
+         "original_title":"Elvis",
+         "overview":"The life story of Elvis Presley as seen through the complicated relationship with his enigmatic manager, Colonel Tom Parker.",
+         "popularity":93.888,
+         "poster_path":"/rva3UhKaMeiB0Vej5A2pm1leX7K.jpg",
+         "release_date":"2022-06-22",
+         "title":"Elvis",
+         "video":false,
+         "vote_average":0,
+         "vote_count":0
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/ejkbJM697dNrtQvIiUpeUPGpoXX.jpg",
+         "genre_ids":[
+            18
+         ],
+         "id":632617,
+         "original_language":"en",
+         "original_title":"C'mon C'mon",
+         "overview":"Johnny and his young nephew forge a tenuous but transformational relationship when they embark on a cross-country trip to see life away from Los Angeles.",
+         "popularity":64.11,
+         "poster_path":"/1oOyJsdcJnnE7cl9bZdUQvBjKNH.jpg",
+         "release_date":"2021-11-19",
+         "title":"C'mon C'mon",
+         "video":false,
+         "vote_average":7.6,
+         "vote_count":285
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/lRm5dRcJKGQqOJ0ZpOekALbrc0k.jpg",
+         "genre_ids":[
+            28,
+            16,
+            12,
+            35
+         ],
+         "id":374205,
+         "original_language":"ja",
+         "original_title":"ワンピース　フィルム GOLD",
+         "overview":"The glittering Gran Tesoro, a city of entertainment beyond the laws of the government, is a sanctuary for the world’s most infamous pirates, Marines, and filthy rich millionaires. Drawn by dreams of hitting the jackpot, Captain Luffy and his crew sail straight for the gold. But behind the gilded curtains lies a powerful king whose deep pockets and deeper ambitions spell disaster for the Straw Hats and the New World alike.",
+         "popularity":74.433,
+         "poster_path":"/OAXCENRg0smntp0uPhTQMPxs0O.jpg",
+         "release_date":"2016-07-23",
+         "title":"One Piece Film: GOLD",
+         "video":false,
+         "vote_average":7.2,
+         "vote_count":342
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/yzX3tluE3fHH2XsklmxvNHSYOVD.jpg",
+         "genre_ids":[
+            16,
+            12,
+            10751,
+            14
+         ],
+         "id":560057,
+         "original_language":"en",
+         "original_title":"The Sea Beast",
+         "overview":"The life of a legendary sea monster hunter is turned upside down when a young girl stows away on his ship.",
+         "popularity":45.118,
+         "poster_path":"/ro3uuFrRxPI8bm6x9IavCr3nbCX.jpg",
+         "release_date":"2022-06-24",
+         "title":"The Sea Beast",
+         "video":false,
+         "vote_average":6,
+         "vote_count":2
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/2dWWf6qjVU0TklCUKCUra1Yqfz3.jpg",
+         "genre_ids":[
+            18
+         ],
+         "id":618416,
+         "original_language":"en",
+         "original_title":"Penguin Bloom",
+         "overview":"When an unlikely ally enters the Bloom family's world in the form of an injured baby magpie they name Penguin, the bird’s arrival makes a profound difference in the struggling family’s life.",
+         "popularity":31.114,
+         "poster_path":"/iUn7594Rwfstu5njA8hf9WQIcFi.jpg",
+         "release_date":"2021-01-21",
+         "title":"Penguin Bloom",
+         "video":false,
+         "vote_average":7.1,
+         "vote_count":200
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/A8PT1ux6aMJDmn3PHTotGT0RDPs.jpg",
+         "genre_ids":[
+            18
+         ],
+         "id":736732,
+         "original_language":"ko",
+         "original_title":"브로커",
+         "overview":"A group of people, brought together by a baby box, set off on a journey that will lead to destinations they never expected.",
+         "popularity":31.271,
+         "poster_path":"/ulGCgWnidH9LJTRL9rMV23cLtQb.jpg",
+         "release_date":"2022-06-08",
+         "title":"Broker",
+         "video":false,
+         "vote_average":6,
+         "vote_count":3
+      }
+   ],
+   "total_pages":19,
+   "total_results":368
+}

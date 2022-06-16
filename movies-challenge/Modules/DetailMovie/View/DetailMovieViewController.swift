@@ -94,3 +94,11 @@ extension DetailMovieViewController: UITableViewDataSource {
         }
     }
 }
+
+// MARK: - DetailMovieViewController getters -
+extension DetailMovieViewController {
+    
+    func getTableView() -> UITableView {
+        return tableView
+    }
+}
