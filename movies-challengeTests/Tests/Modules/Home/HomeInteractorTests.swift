@@ -12,10 +12,11 @@ class HomeInteractorTests: XCTestCase {
     
     var sut: HomeInteractor?
     let mockServiceManager = MockServiceManager()
+    let mockDispatchGroup = DispatchGroup()
 
     override func setUpWithError() throws {
         try super.setUpWithError()
-        sut = HomeInteractor(serviceManager: mockServiceManager)
+        sut = HomeInteractor(serviceManager: mockServiceManager, homeServicesGroup: mockDispatchGroup)
     }
 
     override func tearDownWithError() throws {

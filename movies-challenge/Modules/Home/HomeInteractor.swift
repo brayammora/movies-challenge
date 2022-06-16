@@ -9,13 +9,14 @@ import Foundation
 
 class HomeInteractor {
     
-    private let homeServicesGroup = DispatchGroup()
+    private let homeServicesGroup: DispatchGroup
     private let serviceManager: BaseService
     private var allMovies: [Movie] = []
     private var errorData: CustomError?
     
-    init(serviceManager: BaseService) {
+    init(serviceManager: BaseService, homeServicesGroup: DispatchGroup) {
         self.serviceManager = serviceManager
+        self.homeServicesGroup = homeServicesGroup
     }
     
     private func getPopularMovies() {

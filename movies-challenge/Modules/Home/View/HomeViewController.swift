@@ -69,7 +69,6 @@ class HomeViewController: UIViewController {
         definesPresentationContext = true
         searchController.searchBar.scopeButtonTitles = MovieCategory.allCases.map { $0.name }
         searchController.searchBar.delegate = self
-
     }
     
     // MARK: - Actions -

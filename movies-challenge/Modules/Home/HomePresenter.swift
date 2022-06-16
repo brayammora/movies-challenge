@@ -20,7 +20,7 @@ class HomePresenter {
         }
     }
     
-    private var moviesFiltered: [Movie] = [] {
+    private var filteredMovies: [Movie] = [] {
         didSet {
             view.reloadData()
         }
@@ -41,31 +41,31 @@ class HomePresenter {
 // MARK: - HomePresenterInterface -
 extension HomePresenter: HomePresenterInterface {
     
-    var numberOfItems: Int { isFiltering ? moviesFiltered.count : movies.count }
+    var numberOfItems: Int { isFiltering ? filteredMovies.count : movies.count }
     var searchHint: String { HomeStrings.searchHint }
     var title: String { HomeStrings.title }
     
     func didSelectItem(at indexPath: IndexPath) {
-        let moviesTarget = isFiltering ? moviesFiltered : movies
+        let moviesTarget = isFiltering ? filteredMovies : movies
         guard indexPath.row < moviesTarget.count else { return }
         let movie = moviesTarget[indexPath.row]
         router.navigate(to: .detailMovie(id: movie.id))
     }
     
     func filterContentForSearchText(_ searchText: String, _ category: MovieCategory) {
-        moviesFiltered = []
-        moviesFiltered = movies.filter { (movie: Movie) -> Bool in
-            let doesCategoryMatch = category == .all || movie.category == category
+        filteredMovies = []
+        filteredMovies = movies.filter {
+            let doesCategoryMatch = category == .all || $0.category == category
             if view.isSearchBarEmpty {
                 return doesCategoryMatch
             } else {
-                return doesCategoryMatch && movie.name.lowercased().contains(searchText.lowercased())
+                return doesCategoryMatch && $0.name.lowercased().contains(searchText.lowercased())
             }
         }
     }
     
     func getItem(at indexPath: IndexPath) -> MovieViewModel? {
-        let moviesTarget = isFiltering ? moviesFiltered : movies
+        let moviesTarget = isFiltering ? filteredMovies : movies
         guard indexPath.row < moviesTarget.count else { return nil }
         let movie = moviesTarget[indexPath.row]
         let completePath = "\(NetworkConstants.baseImageUrl)\(movie.posterPath ?? "")"
@@ -80,7 +80,7 @@ extension HomePresenter: HomePresenterInterface {
             case .success(let movies):
                 self.movies = movies
             case .failure(let error):
-                let message: String = error == .noInternetConnection ? ErrorStrings.noInternetMessage : ErrorStrings.defaultMessage
+                let message = error == .noInternetConnection ? ErrorStrings.noInternetMessage : ErrorStrings.defaultMessage
                 self.view.didGetError(message)
             }
             self.view.hideLoader()
