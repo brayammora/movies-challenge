@@ -1,12 +1,12 @@
 # Movies-challenge
 
-1. ¿En qué consiste el principio de responsabilidad única? Cuál es su propósito?
+1. What is the single responsibility principle? What's its purpose?
   
-R: Nos dice que se debe delegar a un objeto/método una única responsabilidad bien definida, para comprobar que lo estamos aplicando debemos ser capaces de describir lo que hace un objeto/método sin tener que usar conjugaciones (y/o). 
+R: It tells us that an object/method should be delegated a single well-defined responsibility, to check that we are applying it we must be able to describe what an object/method does without having to use conjugations (and/or). 
 
-2. Qué características tiene, según su opinión, un “buen” código o código limpio
+2. In your opinion, what characteristics does a "good" code or clean code have?
 
-R// Un código limpio debe ser flexible a los cambios, que sea facil y cómodo de leer, mantener y testear. Lo podemos lograr usando nombres con sentido, principios SOLID, DRY, arquitectura modularizada, patrones de diseño.
+R// A clean code must be flexible to changes, easy and comfortable to read, maintain and test. We can achieve it using meaningful names, SOLID principles, DRY, modularized architecture, design patterns.
 
 ## How the app works
 
