@@ -36,6 +36,7 @@ protocol HomeViewInterface {
 
 protocol HomePresenterInterface {
     var numberOfItems: Int { get }
+    var searchBarTitles: [String] { get }
     var searchHint: String { get }
     var title: String { get }
     

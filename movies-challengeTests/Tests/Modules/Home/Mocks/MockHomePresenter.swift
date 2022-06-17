@@ -19,6 +19,7 @@ class MockHomePresenter: HomePresenterInterface {
     lazy var calls = HomePresenterCalls()
     
     var numberOfItems: Int = 0
+    var searchBarTitles: [String] = []
     var searchHint: String = ""
     var title: String = ""
     

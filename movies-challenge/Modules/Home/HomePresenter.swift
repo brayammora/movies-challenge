@@ -26,9 +26,9 @@ class HomePresenter {
         }
     }
     
-    private var isFiltering: Bool {
-        return view.isFiltering
-    }
+    private var isFiltering: Bool { view.isFiltering }
+    private var moviesTarget: [Movie] { isFiltering ? filteredMovies : movies }
+
     
     // MARK: - Lifecycle -
     init(router: HomeRouterInterface, interactor: HomeInteractorInterface, view: HomeViewInterface) {
@@ -42,11 +42,11 @@ class HomePresenter {
 extension HomePresenter: HomePresenterInterface {
     
     var numberOfItems: Int { isFiltering ? filteredMovies.count : movies.count }
+    var searchBarTitles: [String] { MovieCategory.allCases.map { $0.name } }
     var searchHint: String { HomeStrings.searchHint }
     var title: String { HomeStrings.title }
     
     func didSelectItem(at indexPath: IndexPath) {
-        let moviesTarget = isFiltering ? filteredMovies : movies
         guard indexPath.row < moviesTarget.count else { return }
         let movie = moviesTarget[indexPath.row]
         router.navigate(to: .detailMovie(id: movie.id))
@@ -65,7 +65,6 @@ extension HomePresenter: HomePresenterInterface {
     }
     
     func getItem(at indexPath: IndexPath) -> MovieViewModel? {
-        let moviesTarget = isFiltering ? filteredMovies : movies
         guard indexPath.row < moviesTarget.count else { return nil }
         let movie = moviesTarget[indexPath.row]
         let completePath = "\(NetworkConstants.baseImageUrl)\(movie.posterPath ?? "")"

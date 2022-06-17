@@ -67,7 +67,7 @@ class HomeViewController: UIViewController {
     private func configureSearchBar() {
         navigationItem.searchController = searchController
         definesPresentationContext = true
-        searchController.searchBar.scopeButtonTitles = MovieCategory.allCases.map { $0.name }
+        searchController.searchBar.scopeButtonTitles = presenter.searchBarTitles
         searchController.searchBar.delegate = self
     }
     
