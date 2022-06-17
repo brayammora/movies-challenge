@@ -1,9 +1,12 @@
 # Movies-challenge
 
 1. ¿En qué consiste el principio de responsabilidad única? Cuál es su propósito?
-  R: Nos dice que se debe delegar a un objeto/método una única responsabilidad bien definida, para comprobar que lo estamos aplicando debemos ser capaces de describir lo que hace un objeto/método sin tener que usar conjugaciones (y/o). 
-3. Qué características tiene, según su opinión, un “buen” código o código limpio
-  R// Un código limpio debe ser flexible a los cambios, que sea facil y cómodo de leer, mantener y testear. Lo podemos lograr usando nombres con sentido, principios SOLID, DRY, arquitectura modularizada, patrones de diseño.
+  
+R: Nos dice que se debe delegar a un objeto/método una única responsabilidad bien definida, para comprobar que lo estamos aplicando debemos ser capaces de describir lo que hace un objeto/método sin tener que usar conjugaciones (y/o). 
+
+2. Qué características tiene, según su opinión, un “buen” código o código limpio
+
+R// Un código limpio debe ser flexible a los cambios, que sea facil y cómodo de leer, mantener y testear. Lo podemos lograr usando nombres con sentido, principios SOLID, DRY, arquitectura modularizada, patrones de diseño.
 
 ## How the app works
 
