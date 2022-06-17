@@ -2,7 +2,7 @@
 
 ## How the app works
 
-![alt text](https://github.com/brayammora/movies-challenge/blob/main/movies-challenge/Screenshots/AppWorking.gif)
+![alt text](https://github.com/brayammora/movies-challenge/blob/main/Screenshots/AppWorking.gif)
 
 ## Instalation
 This project require XCode 13.0, Swift 5.0 and should be run on device with iOS 15+ and then, you should `run` the app.
@@ -41,7 +41,7 @@ This architecture is conformed by 5 layers which have single responsibilities, w
 ### Modules
 In this folder we have each app module. In this case we have a Home, and DetailMovie modules.
 
-![alt text](https://github.com/brayammora/movies-challenge/blob/main/movies-challenge/Screenshots/ModulesCapture.png)
+![alt text](https://github.com/brayammora/movies-challenge/blob/main/Screenshots/ModulesCapture.png)
 
 ### Common
 The main idea of this folder is have a transversal module which help us with reusables functions and components.
@@ -53,9 +53,9 @@ The main idea of this folder is have a transversal module which help us with reu
 - **Services:** This allows us to separate in a single context everything related to networking and web services. 
 - **UI:** Contains visual reusable components.
 
-![alt text](https://github.com/brayammora/movies-challenge/blob/main/movies-challenge/Screenshots/CommonCapture.png)
+![alt text](https://github.com/brayammora/movies-challenge/blob/main/Screenshots/CommonCapture.png)
 
 ### Unit Test
 In this section we have the unit test structure, this folder meets the Viper architecture requirements. To continue, we can find a Test Double approach where we use Mocks, and Stubs doubles to test the differents architecture layers.
 
-![alt text](https://github.com/brayammora/movies-challenge/blob/main/movies-challenge/Screenshots/UnitTestCapture.png)
+![alt text](https://github.com/brayammora/movies-challenge/blob/main/Screenshots/UnitTestCapture.png)
