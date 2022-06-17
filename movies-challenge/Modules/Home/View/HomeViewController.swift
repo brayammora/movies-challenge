@@ -69,6 +69,14 @@ class HomeViewController: UIViewController {
         definesPresentationContext = true
         searchController.searchBar.scopeButtonTitles = presenter.searchBarTitles
         searchController.searchBar.delegate = self
+        searchController.searchBar.setScopeBarButtonTitleTextAttributes(
+            [NSAttributedString.Key.foregroundColor: UIColor.black],
+            for: UIControl.State.selected
+        )
+        searchController.searchBar.setScopeBarButtonTitleTextAttributes(
+            [ NSAttributedString.Key.foregroundColor: UIColor.red ],
+            for: UIControl.State.normal
+        )
     }
     
     // MARK: - Actions -
